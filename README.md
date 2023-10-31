@@ -8,7 +8,7 @@ The folder contains the code that allows to apply ADRMPC to a simplified modeliz
        \begin{equation}
          y =  R x + d
 \end{equation}
-where $x \in \mathbb{R}^n$ is the state corresponding to the correction channels ($n=m$), $d$ represents both measurement noise and the disturbances, $A=\text{diag}\left\{-\lambda_1,-\lambda_2,\hdots,-\lambda_n\right\}$ describes the low-pass dynamics of the correction channels, where each $\lambda_i$, $i=1,2,\hdots ,n$, depends on the cut-off frequency value of the corresponding corrector magnet and $R$ assumes the following value: 
+where $x \in \mathbb{R}^n$ is the state corresponding to the correction channels ($n=m$), $d$ represents both measurement noise and the disturbances, $A=\text{diag}\{-\lambda_1,-\lambda_2,\hdots,-\lambda_n\}$ describes the low-pass dynamics of the correction channels, where each $\lambda_i$, $i=1,2,\hdots ,n$, depends on the cut-off frequency value of the corresponding corrector magnet and $R$ assumes the following value: 
 
 <font size="0.1"> $$R=\begin{bmatrix}
      -0.307476818561554	&-0.632372349500656	&-0.454434603452683	&0.476383119821548	&0.406481325626373	&0.588919669389725	&0.463898330926895	&-0.689748972654343	&-0.508117973804474	&-0.240872204303741	&-0.188872218132019	&-0.653477013111115	&0.177061855792999	&-0.691902041435242	&0.645536184310913\\
