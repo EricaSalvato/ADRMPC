@@ -2,12 +2,9 @@
 The folder contains the code that allows to apply ADRMPC to a simplified modelization of synchrotron.
  e assume that the dynamical model of the facility is defined as follows:
 
-\begin{equation}
-       \dot{x}= A x -A u
-       \end{equation}
-       \begin{equation}
-         y =  R x + d
-\end{equation}
+$$\dot{x}= A x -A u$$
+$$ y =  R x + d $$
+
 where $x \in \mathbb{R}^n$ is the state corresponding to the correction channels ($n=m$), $d$ represents both measurement noise and the disturbances, $A=\text{diag}\{-\lambda_1,-\lambda_2,\ldots,-\lambda_n\}$ describes the low-pass dynamics of the correction channels, where each $\lambda_i$, $i=1,2,\ldots ,n$, depends on the cut-off frequency value of the corresponding corrector magnet and $R$ assumes the following value: 
 
 <font size="0.1"> $$R=\begin{bmatrix}
