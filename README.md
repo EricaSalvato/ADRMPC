@@ -2,9 +2,13 @@
 The folder contains the code that allows to apply ADRMPC to a simplified modelization of synchrotron.
  e assume that the dynamical model of the facility is defined as follows:
 
-$$\dot{x}= A x -A u$$
+$$
+\left\{ \begin{array}{l}
+\dot{x}(t) = A x(t) -Au(t) \\
+y(t) =  R x(t) + d(t) 
+\end{array} \right.
+$$
 
-$$ y =  R x + d $$
 
 where $x \in \mathbb{R}^n$ is the state corresponding to the correction channels ($n=m$), $d$ represents both measurement noise and the disturbances, $A=\text{diag}(-\lambda_1,-\lambda_2,\ldots,-\lambda_n)$ describes the low-pass dynamics of the correction channels, where each $\lambda_i$, $i=1,2,\ldots ,n$, depends on the cut-off frequency value of the corresponding corrector magnet and $R$ assumes the following value: 
 
@@ -18,3 +22,23 @@ where $x \in \mathbb{R}^n$ is the state corresponding to the correction channels
  -0.490697994828224	&-0.682480707764626	&-0.458479151129723	&0.575155615806580	&0.454199537634850	&0.485072657465935	&0.367260202765465	&-0.635165944695473	&-0.320197716355324	&-0.114135965704918	&0.663314983248711	&0.0361488014459610	&-0.707611069083214	&-0.345796719193459	&-0.240701138973236
  \end{bmatrix}$$ 
 
+* * *
+## Results
+
+
+
+![ADRMPC_outputsVSrefs_inputs.svg](_resources/ADRMPC_outputsVSrefs_inputs.svg)
+
+(a) the $7$ outputs in the ADRMPC simulation with respect to their references values (thin black marked lines); (b) trend of all the $15$ input provided by the ADRMPC during the simulation with respect to their constraints (dotted lines).
+
+
+
+
+![ADRMPC_outputErrorsVSdisturbances.svg](_resources/ADRMPC_outputErrorsVSdisturbances.svg)
+Magnitude spectrum of each component of the output error (orange) with respect to the magnitude spectrum of the corresponding component of the additive disturbance (blue) during the simulation.
+
+
+## How to use the code
+
+* The script `ADRMPCmain10kHz.m` allows to perform the simulation using the ADRMPC framework, exploring the performance for different receding horizon values.
+* The script `overactuated_MPC_10kHz.m` allows to perform a comparative simulation, based on an output tracking classical MPC scheme.
