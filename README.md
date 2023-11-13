@@ -1,5 +1,13 @@
 # ADRMPC
-The folder contains the code that allows to apply ADRMPC to a simplified modelization of synchrotron.
+
+The folder contains the code used to obtain the results presented  in the paper:
+
+Salvato E. , Fenu G. , Pellegrino F. A., Parisini T. "*An Active Disturbance Rejection Model Predictive Controller for Constrained Over-actuated Systems,* " submitted to the European Control Conference 2024, ECC24
+
+
+
+
+The MATLAB code allows to apply ADRMPC to a simplified modelization of synchrotron.
  e assume that the dynamical model of the facility is defined as follows:
 
 $$
