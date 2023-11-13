@@ -7,8 +7,8 @@ Salvato E. , Fenu G. , Pellegrino F. A., Parisini T. "*An Active Disturbance Rej
 
 
 
-The MATLAB code allows to apply ADRMPC to a simplified modelization of synchrotron.
- e assume that the dynamical model of the facility is defined as follows:
+The MATLAB code allows to apply ADRMPC to a simplified modelization of synchrotron, i.e. 
+assuming that the dynamic model of the facility is defined as follows:
 
 $$
 \left\{ \begin{array}{l}
